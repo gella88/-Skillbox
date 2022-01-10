@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/choices.min.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Blanchard художественная галерея</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- НАВИГАЦИЯ -->
+        <section class="header_nav">
+            <div class="first_nav">
+                <div class="container">
+                    <div class="first_nav_container">
+                        <a href="/index.html" class="logo">
+                            <img src="/img/Лого.svg" alt="">
+                        </a>
+                        <nav class="header_nav">
+                            <ul class="header_nav_ul">
+                                <li class="header_nav_ul_li"><a href="#">О нас</a> </li>
+                                <li class="header_nav_ul_li"><a href="#">Галерея</a></li>
+                                <li class="header_nav_ul_li"><a href="#">Каталог</a></li>
+                                <li class="header_nav_ul_li"><a href="#">События</a></li>
+                                <li class="header_nav_ul_li"><a href="#">Издания</a></li>
+                                <li class="header_nav_ul_li"><a href="#">Проекты</a></li>
+                                <li class="header_nav_ul_li"><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <button class="btn_lk"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+                        </svg>
+                        Войти</button>
+                    </div>
+                </div>
+            </div>
+            <div class="second_nav">
+                <div class="container">
+                    <nav class="second_nav_container">
+                        <ul class="second_nav_ul">
+                            <li class="second_nav_menu">
+                                <a href="#" class="disabled_a">Реализм</a>
+                                <div class="dropdown_menu">
+                                    <a href="#">Тинторетто</a>
+                                    <a href="#">Фридрих</a>
+                                    <a href="#">Леонардо</a>
+                                    <a href="#">Веррокьо</a>
+                                </div>
+                            </li>
+                            <li class="second_nav_menu">
+                                <button class="btn_second_nav_menu">Импрессионизм</button>
+                                <div class="dropdown_menu">
+                                    <a href="#">Моне</a>
+                                    <a href="#">Сислей</a>
+                                    <a href="#">Мане</a>
+                                    <a href="#">Ренуар</a>
+                                </div>
+                            </li>
+                            <li class="second_nav_menu">
+                                <button class="btn_second_nav_menu">Постимпрессионизм</button>
+                                <div class="dropdown_menu">
+                                    <a href="#">Ван Гог</a>
+                                    <a href="#">Сезанн</a>
+                                    <a href="#">Гоген</a>
+                                    <a href="#">Сёра</a>
+                                </div>
+                            </li>
+                            <li class="second_nav_menu">
+                                <button class="btn_second_nav_menu">Авангард</button>
+                                <div class="dropdown_menu">
+                                    <a href="#">Кандинский</a>
+                                    <a href="#">Маринетти</a>
+                                    <a href="#">Малевич</a>
+                                    <a href="#">Пикассо</a>
+                                </div>
+                            </li>
+                            <li class="second_nav_menu">
+                                <button class="btn_second_nav_menu">Футуризм</button>
+                                <div class="dropdown_menu">
+                                    <a href="#">Карра</a>
+                                    <a href="#">Прателла</a>
+                                    <a href="#">Северини</a>
+                                    <a href="#">Балла</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="search">
+                            <form class="search_form" action="">
+                                <button id="search" class="btn_search" aria-label="Кнопка начать поиск по сайту"><svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                                </svg>
+                            </button>
+                                <input type="text" name="search" placeholder="Поиск по сайту" aria-label="Строка поиска, введите ключевое слово" role="search">
+                            </form>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- HERO BLOCK -->
+        <section class="hero" role="banner">
+            <div class="hero_content">
+                <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events" tabindex="0">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-1"></div>
+                        <div class="swiper-slide swiper-slide-2"></div>
+                        <div class="swiper-slide swiper-slide-3"></div>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <h1>Прикоснитесь к прекрасному</h1>
+                    <p>Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+                    <button class="btn_mailing">Подписаться на рассылку</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- ABOUT US -->
+        <section class="about">
+            <div class="container">
+                <div class="about_container">
+                    <h2>О нас</h2>
+                    <p>Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако,
+                        забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость
+                        включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность
+                        среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ГАЛЕРЕЯ -->
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery_left">
+                    <div>
+                        <h2>Галерея</h2>
+                        <span>Фильтр:</span>
+                        <form action="" class="form_gallery">
+                            <select name="" id="choices" class="choices">
+                <option selected value="">Живопись</option>
+                <option>Рисунок</option>
+                <option>Скульптура</option>
+                </select>
+                        </form>
+                    </div>
+
+                    <p>Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией. </p>
+                </div>
+
+                <!-- SWIPER GALLERY -->
+                <div class="swiper">
+                    <div class="gallery_nav">
+                        <div class="swiper-button-prev"></div>
+                        <span class="str">1/2</span>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- <div class="swiper-pagination"></div> -->
+
+                        <!-- Slides -->
+                        <div class="swiper-container swiper-container-s2 swiper-initialized swiper-horizontal swiper-pointer-events" tabindex="0">
+                            <div class="swiper-slide swiper-slide-gallery">
+                                <img src="/img/Rectangle 70.jpg" alt="">
+                                <img src="/img/Rectangle 69.jpg" alt="">
+                                <img src="/img/Rectangle 68.jpg" alt="">
+                                <img src="/img/Rectangle 72.jpg" alt="">
+                                <img src="/img/Rectangle 73.jpg" alt="">
+                                <img src="/img/Rectangle 71.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide-gallery">
+                                <img src="/img/1.jpg" alt="">
+                                <img src="/img/2.jpg" alt="">
+                                <img src="/img/3.jpg" alt="">
+                                <img src="/img/4.jpg" alt="">
+                                <img src="/img/5.jpg" alt="">
+                                <img src="/img/6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div c>
+                    <h2>Каталог</h2>
+                    <img src="/img/image 4.svg" alt="">
+                    <img src="/img/image 6.svg" alt="">
+                    <img src="/img/image 7.svg" alt="">
+                    <img src="/img/image 8.svg" alt="">
+                    <img src="/img/image 5.svg" alt="">
+                </div>
+
+
+
+        </section>
+
+    </main>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/choices.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

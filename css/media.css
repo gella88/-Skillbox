@@ -1,0 +1,32 @@
+/* UI-KIT */
+
+.header_nav_ul_li a,
+.second_nav_menu p {
+    padding: 4px 5px;
+    transition: all .3s ease-in-out;
+}
+
+.btn_lk,
+.btn_lk path {
+    padding: 4px 5px;
+}
+
+.header_nav_ul_li a:focus,
+.btn_lk:focus,
+.second_nav_menu p:focus {
+    background-color: #7943A4;
+}
+
+.header_nav_ul_li a:hover,
+.btn_lk:hover,
+.btn_lk:hover path,
+.second_nav_menu p:hover {
+    color: #C283F3;
+    fill: #C283F3;
+}
+
+.header_nav_ul_li a:active,
+.second_nav_menu p:active {
+    color: #7943A4;
+    background-color: transparent;
+}

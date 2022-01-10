@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Muller', sans-serif;
+    src: url("/fonts/Muller.eot");
+    src: local('Muller'), local('Muller'), url("/fonts/Muller.woff") format("woff"), url("/fonts/Muller.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open_Sans_italic', sans-serif;
+    src: url("/fonts/OpenSans-Italic.eot");
+    src: local('Open_Sans_italic'), local('Open_Sans_italic'), url("/fonts/OpenSans-Italic.woff") format("woff"), url("/fonts/OpenSans-Italic.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open_Sans', sans-serif;
+    src: url("/fonts/OpenSans-Regular\ \(1\).eot");
+    src: local('Open_Sans'), local('Open_Sans'), url("/fonts/OpenSans-Regular\ \(1\).woff") format("woff"), url("/fonts/OpenSans-Regular\ \(1\).woff2") format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open_Sans_bold', sans-serif;
+    src: url("/fonts/OpenSans-Bold.eot");
+    src: local('Open_Sans_bold'), local('Open_Sans_bold'), url("/fonts/OpenSans-Bold.woff") format("woff"), url("/fonts/OpenSans-Bold.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open_Sans_semi_bold', sans-serif;
+    src: url("/fonts/OpenSans-SemiBold.eot");
+    src: local('Open_Sans_semi_bold'), local('Open_Sans_semi_bold'), url("/fonts/OpenSans-SemiBold.woff") format("woff"), url("/fonts/OpenSans-SemiBold.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
