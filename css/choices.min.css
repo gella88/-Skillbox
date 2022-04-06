@@ -88,10 +88,11 @@
     pointer-events: none
 }
 
-.choices[data-type*=select-one].is-open:after {
-    /* border-color: transparent transparent #333; */
-    /* margin-top: -7.5px */
-}
+
+/* .choices[data-type*=select-one].is-open:after {
+    border-color: transparent transparent #333;
+    margin-top: -7.5px
+} */
 
 .choices[data-type*=select-one][dir=rtl]:after {
     left: 11.5px;

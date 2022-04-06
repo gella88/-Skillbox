@@ -6,109 +6,202 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- STYLES -->
-    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- <link rel="stylesheet" href="/css/normalize.css"> -->
     <link rel="stylesheet" href="/css/fonts.css">
     <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="/css/choices.min.css">
-    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="/css/simplebar.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
     <title>Blanchard художественная галерея</title>
 </head>
 
 <body>
     <header class="header">
         <!-- НАВИГАЦИЯ -->
-        <section class="header_nav">
-            <div class="first_nav">
-                <div class="container">
-                    <div class="first_nav_container">
-                        <a href="/index.html" class="logo">
-                            <img src="/img/Лого.svg" alt="">
-                        </a>
-                        <nav class="header_nav">
-                            <ul class="header_nav_ul">
-                                <li class="header_nav_ul_li"><a href="#">О нас</a> </li>
-                                <li class="header_nav_ul_li"><a href="#">Галерея</a></li>
-                                <li class="header_nav_ul_li"><a href="#">Каталог</a></li>
-                                <li class="header_nav_ul_li"><a href="#">События</a></li>
-                                <li class="header_nav_ul_li"><a href="#">Издания</a></li>
-                                <li class="header_nav_ul_li"><a href="#">Проекты</a></li>
-                                <li class="header_nav_ul_li"><a href="#">Контакты</a></li>
-                            </ul>
-                        </nav>
-                        <button class="btn_lk"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="header_top">
+            <div class="container header__container">
+                <div id="burger" class="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <a href="/index.html" class="logo">
+                    <img src="/img/Лого.svg" alt="">
+                </a>
+                <nav id="header_nav" class="header_nav">
+                    <ul class="header_nav_ul">
+                        <li class="header_nav_ul_li"><a href="#about">О&nbsp;нас</a> </li>
+                        <li class="header_nav_ul_li"><a href="#gallery">Галерея</a></li>
+                        <li class="header_nav_ul_li"><a href="#">Каталог</a></li>
+                        <li class="header_nav_ul_li"><a href="#">События</a></li>
+                        <li class="header_nav_ul_li"><a href="#">Проекты</a></li>
+                        <li class="header_nav_ul_li"><a href="#">Контакты</a></li>
+                    </ul>
+                    <button class="burger_active">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.63623" width="37.2838" height="3.72838" transform="rotate(45 2.63623 0)" fill="white"/>
+                        <rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white"/>
+                        </svg>                                   
+                    </button>
+                    <button class="btn_lk_mobile"><a href="#"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
                         </svg>
                         Войти</button>
-                    </div>
+                </nav>
+                <button class="btn_lk"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+                                                        </svg>
+                                                        Войти</button>
+                <!-- САМА форма ПОИСКА -->
+                <div class="header_search">
+                    <button id="search" class="btn_search" aria-label="Кнопка начать поиск по сайту">
+                                <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79501 20.8721 2.79501 13.5104C2.79501 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
+                                    </svg>                                   
+                  </button>
+                    <form action="/" id="nav_form" class="nav_form" method="post">
+                        <button id="btn_search_submit" type="submit" class="btn_search btn_search_submit" role="search">
+                                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79501 20.8721 2.79501 13.5104C2.79501 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
+                                        </svg>                                       
+                      </button>
+                        <input class="input_search" type="text" name="Search" placeholder="" aria-label="Строка поиска, введите ключевое слово" role="search">
+                        <button id="search_x" type="button" class="search_x">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09326 0)" fill="white"/>
+                                        <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9075)" fill="white"/>
+                                        </svg>                                       
+                        </button>
+                    </form>
                 </div>
             </div>
-            <div class="second_nav">
-                <div class="container">
-                    <nav class="second_nav_container">
-                        <ul class="second_nav_ul">
-                            <li class="second_nav_menu">
-                                <a href="#" class="disabled_a">Реализм</a>
-                                <div class="dropdown_menu">
-                                    <a href="#">Тинторетто</a>
-                                    <a href="#">Фридрих</a>
-                                    <a href="#">Леонардо</a>
-                                    <a href="#">Веррокьо</a>
-                                </div>
-                            </li>
-                            <li class="second_nav_menu">
-                                <button class="btn_second_nav_menu">Импрессионизм</button>
-                                <div class="dropdown_menu">
-                                    <a href="#">Моне</a>
-                                    <a href="#">Сислей</a>
-                                    <a href="#">Мане</a>
-                                    <a href="#">Ренуар</a>
-                                </div>
-                            </li>
-                            <li class="second_nav_menu">
-                                <button class="btn_second_nav_menu">Постимпрессионизм</button>
-                                <div class="dropdown_menu">
-                                    <a href="#">Ван Гог</a>
-                                    <a href="#">Сезанн</a>
-                                    <a href="#">Гоген</a>
-                                    <a href="#">Сёра</a>
-                                </div>
-                            </li>
-                            <li class="second_nav_menu">
-                                <button class="btn_second_nav_menu">Авангард</button>
-                                <div class="dropdown_menu">
-                                    <a href="#">Кандинский</a>
-                                    <a href="#">Маринетти</a>
-                                    <a href="#">Малевич</a>
-                                    <a href="#">Пикассо</a>
-                                </div>
-                            </li>
-                            <li class="second_nav_menu">
-                                <button class="btn_second_nav_menu">Футуризм</button>
-                                <div class="dropdown_menu">
-                                    <a href="#">Карра</a>
-                                    <a href="#">Прателла</a>
-                                    <a href="#">Северини</a>
-                                    <a href="#">Балла</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="search">
-                            <form class="search_form" action="">
-                                <button id="search" class="btn_search" aria-label="Кнопка начать поиск по сайту"><svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+        </div>
+        <div class="second_nav">
+            <div class="container">
+                <nav class="second_nav_container">
+                    <ul class="list">
+                        <li class="list--item">
+                            <button class="list--item__btn list--item__btn1">Реализм<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6L1 1" stroke="white"/>
                                 </svg>
-                            </button>
-                                <input type="text" name="search" placeholder="Поиск по сайту" aria-label="Строка поиска, введите ключевое слово" role="search">
-                            </form>
-                        </div>
-                    </nav>
+                                </button>
+                            <div class="container--dropdown simplebar-container">
+                                <ul class="container--dropdown-list simplebar">
+                                    <li class="container--dropdown-list__item simplebar__item tintoretto">Тинторетто</li>
+                                    <li class="container--dropdown-list__item simplebar__item fridrih">Фридрих</li>
+                                    <li class="container--dropdown-list__item simplebar__item leonardo">Леонардо</li>
+                                    <li class="container--dropdown-list__item simplebar__item veriokko">Веррокьо</li>
+                                    <li class="container--dropdown-list__item simplebar__item veriokko">Веррокьо</li>
+                                    <li class="container--dropdown-list__item simplebar__item veriokko">Веррокьо</li>
+                                    <li class="container--dropdown-list__item simplebar__item veriokko">Веррокьо</li>
+                                    <li class="container--dropdown-list__item simplebar__item veriokko">Веррокьо</li>
+                                    <li class="container--dropdown-list__item simplebar__item veriokko">Веррокьо</li>
+                                    <li class="container--dropdown-list__item simplebar__item veriokko">Веррокьо</li>
+                                    <li class="container--dropdown-list__item simplebar__item veriokko">Веррокьо</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list--item">
+                            <button class="list--item__btn">Импрессионизм<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 1L6 6L1 1" stroke="white"/>
+</svg>
+</button>
+                            <div class="container--dropdown simplebar-container">
+                                <ul class="container--dropdown-list simplebar">
+                                    <li class="container--dropdown-list__item simplebar__item mone">Моне</li>
+                                    <li class="container--dropdown-list__item simplebar__item sisley">Сислей</li>
+                                    <li class="container--dropdown-list__item simplebar__item mane">Мане</li>
+                                    <li class="container--dropdown-list__item simplebar__item renuar">Ренуар</li>
+                                    <li class="container--dropdown-list__item simplebar__item renuar">Ренуар</li>
+                                    <li class="container--dropdown-list__item simplebar__item renuar">Ренуар</li>
+                                    <li class="container--dropdown-list__item simplebar__item renuar">Ренуар</li>
+                                    <li class="container--dropdown-list__item simplebar__item renuar">Ренуар</li>
+                                    <li class="container--dropdown-list__item simplebar__item renuar">Ренуар</li>
+                                    <li class="container--dropdown-list__item simplebar__item renuar">Ренуар</li>
+                                    <li class="container--dropdown-list__item simplebar__item renuar">Ренуар</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list--item">
+                            <button class="list--item__btn">Постимпрессионизм<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 1L6 6L1 1" stroke="white"/>
+</svg>
+</button>
+                            <div class="container--dropdown simplebar-container">
+                                <ul class="container--dropdown-list simplebar">
+                                    <li class="container--dropdown-list__item simplebar__item van_gog">Ван Гог</li>
+                                    <li class="container--dropdown-list__item simplebar__item sezann">Сезанн</li>
+                                    <li class="container--dropdown-list__item simplebar__item gogen">Гоген</li>
+                                    <li class="container--dropdown-list__item simplebar__item sera">Сёра</li>
+                                    <li class="container--dropdown-list__item simplebar__item sera">Сёра</li>
+                                    <li class="container--dropdown-list__item simplebar__item sera">Сёра</li>
+                                    <li class="container--dropdown-list__item simplebar__item sera">Сёра</li>
+                                    <li class="container--dropdown-list__item simplebar__item sera">Сёра</li>
+                                    <li class="container--dropdown-list__item simplebar__item sera">Сёра</li>
+                                    <li class="container--dropdown-list__item simplebar__item sera">Сёра</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list--item">
+                            <button class="list--item__btn">Авангард<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 1L6 6L1 1" stroke="white"/>
+</svg>
+</button>
+                            <div class="container--dropdown simplebar-container">
+                                <ul class="container--dropdown-list simplebar">
+                                    <li class="container--dropdown-list__item simplebar__item kandinsky">Кандинский</li>
+                                    <li class="container--dropdown-list__item simplebar__item marinetti">Маринетти</li>
+                                    <li class="container--dropdown-list__item simplebar__item malevich">Малевич</li>
+                                    <li class="container--dropdown-list__item simplebar__item picasso">Пикассо</li>
+                                    <li class="container--dropdown-list__item simplebar__item picasso">Пикассо</li>
+                                    <li class="container--dropdown-list__item simplebar__item picasso">Пикассо</li>
+                                    <li class="container--dropdown-list__item simplebar__item picasso">Пикассо</li>
+                                    <li class="container--dropdown-list__item simplebar__item picasso">Пикассо</li>
+                                    <li class="container--dropdown-list__item simplebar__item picasso">Пикассо</li>
+                                    <li class="container--dropdown-list__item simplebar__item picasso">Пикассо</li>
+                                    <li class="container--dropdown-list__item simplebar__item picasso">Пикассо</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list--item">
+                            <button class="list--item__btn">Футуризм<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 1L6 6L1 1" stroke="white"/>
+</svg>
+</button>
+                            <div class="container--dropdown simplebar-container">
+                                <ul class="container--dropdown-list">
+                                    <li class="simplebar-wrapper container--dropdown-list__item cappa">Карра</li>
+                                    <li class="simplebar-wrapper container--dropdown-list__item pratella">Прателла</li>
+                                    <li class="container--dropdown-list__item severini">Северини</li>
+                                    <li class="container--dropdown-list__item balla">Балла</li>
+                                    <li class="container--dropdown-list__item balla">Балла</li>
+                                    <li class="container--dropdown-list__item balla">Балла</li>
+                                    <li class="container--dropdown-list__item balla">Балла</li>
+                                    <li class="container--dropdown-list__item balla">Балла</li>
+                                    <li class="container--dropdown-list__item balla">Балла</li>
+                                    <li class="container--dropdown-list__item balla">Балла</li>
+                                    <li class="container--dropdown-list__item balla">Балла</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search">
+                        <form class="search_form" autocomplete="off" action="">
+                            <button id="search" class="btn_search" aria-label="Кнопка начать поиск по сайту"><svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                            </svg>
+                        </button>
+                            <input type="text" name="search" placeholder="Поиск по сайту" aria-label="Строка поиска, введите ключевое слово" role="search">
+                        </form>
+                    </div>
+                </nav>
 
-                </div>
             </div>
-        </section>
-
+        </div>
         <!-- HERO BLOCK -->
         <section class="hero" role="banner">
             <div class="hero_content">
@@ -118,19 +211,20 @@
                         <div class="swiper-slide swiper-slide-2"></div>
                         <div class="swiper-slide swiper-slide-3"></div>
                     </div>
-
                 </div>
                 <div class="container">
-                    <h1>Прикоснитесь к прекрасному</h1>
-                    <p>Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-                    <button class="btn_mailing">Подписаться на рассылку</button>
+                    <div class="hero_text">
+                        <h1>Прикоснитесь к&nbsp;прекрасному</h1>
+                        <p>Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+                        <button class="btn_mailing">Подписаться на рассылку</button>
+                    </div>
                 </div>
             </div>
         </section>
     </header>
     <main>
         <!-- ABOUT US -->
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <div class="about_container">
                     <h2>О нас</h2>
@@ -143,7 +237,7 @@
         </section>
 
         <!-- ГАЛЕРЕЯ -->
-        <section class="gallery">
+        <section id="gallery" class="gallery">
             <div class="container">
                 <div class="gallery_left">
                     <div>
@@ -206,14 +300,12 @@
                     <img src="/img/image 8.svg" alt="">
                     <img src="/img/image 5.svg" alt="">
                 </div>
-
-
-
         </section>
 
     </main>
     <script src="/js/swiper-bundle.min.js"></script>
     <script src="/js/choices.min.js"></script>
+    <script src="/js/simplebar.min.js"></script>
     <script src="/js/index.js"></script>
 </body>
 
